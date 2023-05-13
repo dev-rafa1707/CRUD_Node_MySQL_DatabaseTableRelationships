@@ -1,0 +1,23 @@
+{
+  "name": "projeto11_crud_node_mysql_clients",
+  "version": "1.0.0",
+  "description": "crud node mysql clients",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "author": "dev-rafa1707",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql2": "^3.2.4",
+    "sequelize": "^6.31.1",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

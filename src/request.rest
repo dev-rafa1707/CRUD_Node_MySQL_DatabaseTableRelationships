@@ -1,0 +1,44 @@
+
+# GetAll the clients
+GET http://localhost:3000/client
+
+###
+# GetByCity
+GET http://localhost:3000/client/cidade/Brasilia
+
+
+###  
+# GetbyId
+GET http://localhost:3000/client/1
+
+###  
+# Update a client using the Id
+PUT http://localhost:3000/client/5
+Content-Type: application/json
+
+    {
+        "nome":"Diogo de Andrada Silva",
+        "email":"diogo@bol.com.br",
+        "cidade":"Brasilia",
+        "estado":"DF",
+        "cep":"06730000"
+    }
+  
+###
+# Create a client
+POST http://localhost:3000/client/
+Content-Type: application/json
+
+    {
+        "nome":"Ana Giseli",
+        "email":"ana@bol.com.br",
+        "cidade":"Fpolis",
+        "estado":"SC",
+        "cep":"86490000"
+    }
+  
+
+
+###
+# Delete a client by Id
+DELETE http://localhost:3000/client/2
